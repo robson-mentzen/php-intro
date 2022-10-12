@@ -93,3 +93,22 @@ $calculos = [
 ];
 
 var_dump($calculos);
+
+
+/**
+ * [ Exercícios ]
+ */
+fullStackPHPClassSession("exercícios", __LINE__);
+
+$numeros = array(5, 10, 15, 20, 25);
+$num_pares = 0;
+
+for ($var=0; $var < count($numeros); $var++) {
+    $valor = $numeros[$var];
+
+    if($valor %2 == 0) {
+        $num_pares++;
+    }
+}
+
+echo "Total de números pares = " . $num_pares;
