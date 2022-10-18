@@ -106,7 +106,7 @@ $num_pares = 0;
 for ($var=0; $var < count($numeros); $var++) {
     $valor = $numeros[$var];
 
-    if($valor %2 == 0) {
+    if($valor % 2 == 0) {
         $num_pares++;
     }
 }

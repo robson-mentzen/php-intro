@@ -122,4 +122,3 @@ $codigoLimpo = call_user_func("strip_tags", $codigoHTML);
 
 echo $codigoHTML;
 echo $codigoLimpo;
-
