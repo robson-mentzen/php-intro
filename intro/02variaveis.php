@@ -109,15 +109,15 @@ $pessoa2->nome = "Maria";
 $pessoa2->idade = 17;
 
 if($pessoa1->idade > $pessoa2->idade){
-    echo $pessoa1->nome . " é a pessoa com a idade maior / ";
+    echo $pessoa1->nome . " é a pessoa com a idade maior";
 }else if($pessoa2->idade > $pessoa1->idade){
-    echo $pessoa2->nome . " é a pessoa com a idade maior / ";
+    echo $pessoa2->nome . " é a pessoa com a idade maior";
 }else{
-    echo $pessoa1->nome . " e " . $pessoa2->nome . " tem a mesma idade / ";
+    echo $pessoa1->nome . " e " . $pessoa2->nome . " tem a mesma idade";
 }
 
 //exercício2
-$codigoHTML = "<h2>Olá <span><i>mundo</i><span></h2>";
+$codigoHTML = "<h2>Olá, <span><i>mundo!</i><span></h2>";
 $codigoLimpo = call_user_func("strip_tags", $codigoHTML);
 
 echo $codigoHTML;
