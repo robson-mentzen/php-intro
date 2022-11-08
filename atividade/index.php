@@ -29,6 +29,7 @@ fullStackPHPClassName("Atividades");
 fullStackPHPClassSession("Atividades", __LINE__);
 
 //Exercício1
+echo "<h3>Execício 1:</h3>";
 $array = [
     "Aluno",
     "Professor",
@@ -40,11 +41,13 @@ $array = [
 var_dump($array);
 
 //Exercício2
+echo "<h3>Execício 2:</h3>";
 array_unshift($array, "Informática");
 
 var_dump($array);
 
 //Exercício3
+echo "<h3>Execício 3:</h3>";
 if (in_array("Aluno", $array)) {
     echo "<h6>A palavra 'Aluno' foi encontrada</h6>";
 } else {
@@ -58,6 +61,7 @@ if (in_array("Prova", $array)) {
 };
 
 //Exercício4
+echo "<h3>Execício 4:</h3>";
 $frase = array("Desenvolvimento de Aplicações para Internet");
 $contador = 0;
 
@@ -71,6 +75,7 @@ while($contador < count($frase)){
 };
 
 //Exercício5
+echo "<h3>Execício 5:</h3>";
 $frase1 =  "Desenvolvimento de Aplicações para Internet";
 
 var_dump([
