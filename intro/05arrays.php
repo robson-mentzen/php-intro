@@ -63,6 +63,16 @@ var_dump($novo_reverse_array);
  */
 fullStackPHPClassSession("verificação", __LINE__);
 
+var_dump(
+    array_keys($array),
+    array_values($array),
+);
+
+echo "<h5>Verificar se existe PHP dentro do array</h5>";
+if (in_array("PHP", $array)){
+    echo "<h5>Tem PHP!</h5>";
+};
+
 
 /**
  * [ exemplo prático ] um template view | implode
