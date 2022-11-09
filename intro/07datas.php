@@ -11,7 +11,7 @@ fullStackPHPClassSession("A classe DateTime", __LINE__);
 $dateNow = new DateTime();
 $birthDate = new DateTime("1989-07-14"); //Precisa ser no formato ANO-MÊS-DIA
 //Exemplo de criação de variável do tipo DateTime através de uma String em outro formato
-//Conversão de: d/m/Y -> Y-m-d
+//Conversão de d/m/Y -> Y-m-d
 $dateStatic = DateTime::createFromFormat(DATE_BR, "07/10/2000 21:00:00");
 
 var_dump(
