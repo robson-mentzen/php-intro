@@ -15,16 +15,18 @@
     </head>
 
     <body>
-        <div>
-            <label>Usuário</label>
-            <input type="text" id="usuario" nome="usuario">
-        </div>
-        <div>
-            <label>Senha</label>
-            <input type="password" id="senha" nome="senha">
-        </div>
-        <div>
-            <input type="button" id="logar" value="ENTRAR">
-        </div>
+        <form method="post" action="conexao.php">
+            <div>
+                <label>Usuário</label>
+                <input type="text" id="usuario" nome="usuario">
+            </div>
+            <div>
+                <label>Senha</label>
+                <input type="password" id="senha" nome="senha">
+            </div>
+            <div>
+                <input type="submit" id="logar" value="ENTRAR">
+            </div>
+        </form>
     </body>
 </html>
