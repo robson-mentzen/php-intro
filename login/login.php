@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Atividade</title>
+        <title>Login</title>
 
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -15,6 +15,16 @@
     </head>
 
     <body>
-        <input id="txtMensagem" type="text" value="" class="form-control">
+        <div>
+            <label>Usuário</label>
+            <input type="text" id="usuario" nome="usuario">
+        </div>
+        <div>
+            <label>Senha</label>
+            <input type="password" id="senha" nome="senha">
+        </div>
+        <div>
+            <input type="button" id="logar" value="ENTRAR">
+        </div>
     </body>
 </html>
