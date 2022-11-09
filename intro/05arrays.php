@@ -65,19 +65,24 @@ fullStackPHPClassSession("verificação", __LINE__);
 
 var_dump(
     array_keys($array),
-    array_values($array),
+    array_values($array)
 );
 
-echo "<h5>Verificar se existe PHP dentro do array</h5>";
-if (in_array("PHP", $array)){
-    echo "<h5>Tem PHP!</h5>";
-};
+echo "<h4>Verificar se existe PHP dentro do array:</h4>";
+if(in_array("PHP", $array)){
+    echo "TEM PHP!";
+}
 
+$separator = ", ";
 
-/**
- * [ exemplo prático ] um template view | implode
- */
-fullStackPHPClassSession("exemplo prático", __LINE__);
+//implode
+$arrayToString = implode($separator, $array);
+
+echo "<h4>Array em String: " . $arrayToString . "</h4>";
+
+//explode
+$arrayDeNovo = explode($separator, $arrayToString);
+echo var_dump($arrayDeNovo);
 
 
 /**
