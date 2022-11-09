@@ -6,8 +6,27 @@ fullStackPHPClassName("Manipulação de objetos");
  */
 fullStackPHPClassSession("manipulação", __LINE__);
 
-/**
- * [ análise ] class | objetcs | instances
- */
-fullStackPHPClassSession("análise", __LINE__);
+//criar um objeto stdClass
+$objeto = new stdClass();
+$objeto->name = "Róbson Kunzler Mentzen";
+$objeto->company = "UNIVATES";
 
+$array = [
+    "name" => "Róbson Kunzler Mentzen",
+    "company" => "UNIVATES",
+];
+
+echo var_dump($array);
+
+//cria um objeto através de um array
+$objPessoa = (object)$array;
+
+echo var_dump($objPessoa);
+
+echo var_dump($objeto);
+
+//acessando informações atráves do array
+echo "<h4>Meu nome é {$array["name"]}</h4>";
+
+//acessando informações atráves do objeto
+echo "<h4>Minha empresa é a {$objeto->company}</h4>";
